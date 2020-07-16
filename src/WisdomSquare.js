@@ -1,5 +1,5 @@
 import React from 'react';
-import wizsom from './wisdom';
+import wisdom from './wisdom';
 
 class WisdomSquare extends React.Component {
   render(){
