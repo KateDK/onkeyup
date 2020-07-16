@@ -8,7 +8,8 @@ class WisdomSquare extends React.Component {
   render(){
     return (
     <div className='WisdomSquare'>
-      {wizsom[0]}
+      {/* {wisdom[0]} */}
+      {this.randomWisdom()}
     </div>
     )
   }
