@@ -1,5 +1,6 @@
 import React from 'react';
 import wisdom from './wisdom';
+import './WisdomSquare.css';
 
 class WisdomSquare extends React.Component {
   randomWisdom = () => {
