@@ -12,6 +12,9 @@ class WisdomSquare extends React.Component {
   }
   handleClick = ()=>{
     this.setState({clicked:true})
+
+  handlMouseLeave = () => {
+    this.setState({content: this.randomWisdom(), visited: true})
   }
   render(){
     const {content,clicked} = this.state;
