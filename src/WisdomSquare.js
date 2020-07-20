@@ -6,6 +6,9 @@ class WisdomSquare extends React.Component {
   randomWisdom = () => {
     return wisdom[Math.floor(Math.random()*wisdom.length)]
   }
+  handleClick = ()=>{
+    this.setState({clicked:true})
+  }
   render(){
     return (
     <div className='WisdomSquare'>
