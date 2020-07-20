@@ -8,7 +8,7 @@ class WisdomSquare extends React.Component {
   }
   state={
     content: "😃",
-    clicked: false,
+    visited: false,
   }
   handleClick = ()=>{
     this.setState({clicked:true})
