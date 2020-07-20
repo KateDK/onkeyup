@@ -3,6 +3,7 @@ import './WisdomForm.css';
 class WisdomForm extends React.Component{
   state={
     content:'',
+    special: false,
   }
 
   handleKeyUp = (e) => {
