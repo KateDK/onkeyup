@@ -14,10 +14,13 @@ class WisdomSquare extends React.Component {
     this.setState({clicked:true})
   }
   render(){
+    const {content,clicked} = this.state;
     return (
     <div className='WisdomSquare'>
       {/* {wisdom[0]} */}
-      {this.randomWisdom()}
+      <p className={clicked ? 'WisdomText' : 'WisdomText new'} onClick={this.handleClick}>
+        {content}
+      </p>
     </div>
     )
   }
