@@ -1,0 +1,10 @@
+.WisdomForm {
+  margin: auto;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.WisdomForm textarea {
+  width: 330px;
+}
