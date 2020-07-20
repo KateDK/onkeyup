@@ -10,14 +10,13 @@ class WisdomSquare extends React.Component {
     content: "😃",
     visited: false,
   }
-  handleClick = ()=>{
-    this.setState({clicked:true})
 
   handlMouseLeave = () => {
     this.setState({content: this.randomWisdom(), visited: true})
   }
+
   render(){
-    const {content,clicked} = this.state;
+    const {content,visited} = this.state;
     return (
     <div className='WisdomSquare'>
       <p className={visited ? 'WisdomText' : 'WisdomText new'} onMouseLeave={this.handlMouseLeave}>
