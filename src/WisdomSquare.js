@@ -20,8 +20,7 @@ class WisdomSquare extends React.Component {
     const {content,clicked} = this.state;
     return (
     <div className='WisdomSquare'>
-      {/* {wisdom[0]} */}
-      <p className={clicked ? 'WisdomText' : 'WisdomText new'} onClick={this.handleClick}>
+      <p className={visited ? 'WisdomText' : 'WisdomText new'} onMouseLeave={this.handlMouseLeave}>
         {content}
       </p>
     </div>
