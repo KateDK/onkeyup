@@ -6,8 +6,12 @@ class WisdomForm extends React.Component{
   }
 
   handleKeyUp = (e) => {
-    this.setState({content: this.statecontent+e.key})
+    const char = e.charCode || e.keyCode;
 
+    if(char >= 32 ){
+      const key = e.key;
+      this.setState({content: this.state.content+key, special: key === "*" && true});
+    }
   }
 
   render(){
