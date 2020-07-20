@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
-import WisdomSquare from './WisdomSquare'
+import Container from './Container';
+
 function App() {
   return (
     <div className="App">
-      <WisdomSquare/>
+      <Container/>
     </div>
   );
 }
