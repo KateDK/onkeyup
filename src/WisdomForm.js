@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './WisdomForm.css';
 class WisdomForm extends React.Component{
   render(){
     return(
