@@ -4,7 +4,7 @@ class WisdomForm extends React.Component{
   render(){
     return(
       <div className='WisdomForm'>
-        I am a proud form
+        <textarea placeholder="Share your own wisdom:"/>
       </div>
     )
   }
