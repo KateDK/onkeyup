@@ -3,7 +3,7 @@ import './Copy.css';
 
 class Copy extends React.Component{
   handleCopy = () => {
-    alert("NAH, dont copy me bruh!");
+    alert("Why dont you come up with your own bunch of nonsense");
   }
   render(){
     return (
