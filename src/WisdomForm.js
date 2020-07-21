@@ -9,12 +9,11 @@ class WisdomForm extends React.Component{
 
   handleKeyUp = (e) => {
     const char = e.charCode || e.keyCode;
+    const {content,specialCount}= this.state;
     if(char >= 32 && char < 127 ){
       const key = e.key;
-      this.setState({content: this.state.content+key, special: key === "*" && true});
     }
     if(char === 8){
-      this.setState({content: this.state.content.slice(0,-1)});
     }
   }
 
