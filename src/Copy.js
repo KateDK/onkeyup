@@ -1,4 +1,5 @@
 import React from 'react';
+import './Copy.css';
 
 class Copy extends React.Component{
   render(){
