@@ -1,5 +1,6 @@
 import React from 'react';
 import './WisdomForm.css';
+
 class WisdomForm extends React.Component{
   state={
     content:'',
@@ -24,9 +25,9 @@ class WisdomForm extends React.Component{
   }
 
   render(){
-    const {special} = this.state;
+    const {specialCount} = this.state;
     return(
-      <div className={special ? 'WisdomForm glow' : "WisdomForm"}>
+      <div className={specialCount > 0 ? 'WisdomForm glow' : "WisdomForm"}>
         <textarea placeholder="Share your own wisdom:" onKeyUp={this.handleKeyUp}/>
       </div>
     )
