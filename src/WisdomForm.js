@@ -4,6 +4,7 @@ class WisdomForm extends React.Component{
   state={
     content:'',
     special: false,
+    specialCount: 0,
   }
 
   handleKeyUp = (e) => {
