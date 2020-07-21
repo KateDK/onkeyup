@@ -24,8 +24,9 @@ class WisdomForm extends React.Component{
   }
 
   render(){
+    const {special} = this.state;
     return(
-      <div className='WisdomForm'>
+      <div className={special ? 'WisdomForm glow' : "WisdomForm"}>
         <textarea placeholder="Share your own wisdom:" onKeyUp={this.handleKeyUp}/>
       </div>
     )
