@@ -9,3 +9,8 @@
   width: 320px;
   height: 120px;
 }
+
+.glow textarea {
+  outline-color: blueviolet;
+  border-radius: 5%;
+}
