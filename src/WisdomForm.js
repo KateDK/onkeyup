@@ -12,7 +12,7 @@ class WisdomForm extends React.Component{
     const {content,specialCount}= this.state;
     if(char >= 32 && char < 127 ){
       const key = e.key;
-      this.setState({content: content+key, specialCount: key === "*" ? specialCount+1 : specialCount,});
+      this.setState({content: e.target.value, specialCount: key === "*" ? specialCount+1 : specialCount,});
     }
     if(char === 8){
       const last = content[content.length-1];
