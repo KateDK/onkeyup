@@ -24,10 +24,10 @@ class WisdomForm extends React.Component{
   }
 
   render(){
-    const {specialCount} = this.state;
+    const {specialCount,content} = this.state;
     return(
       <div className={specialCount > 0 ? 'WisdomForm glow' : "WisdomForm"}>
-        <textarea placeholder="Share your own wisdom:" onKeyUp={this.handleKeyUp}/>
+        <textarea placeholder="Share your own wisdom:" onKeyUp={this.handleKeyUp} vlue={content} ref={el=>this.input=el}/>
       </div>
     )
   }
