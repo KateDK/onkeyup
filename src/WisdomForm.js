@@ -15,11 +15,12 @@ class WisdomForm extends React.Component{
       this.setState({content: e.target.value, specialCount: key === "*" ? specialCount+1 : specialCount});
     }
     if(char === 8){
-      const last = content[content.length-1];
-      this.setState({content: content.slice(0,-1)});
-      if(last === "*"){
+      const selectionStart = this.input.selectionStart
+      const currentDeleted = content[selectionStart-1];
+      if(currentDeleted === "*"){
         this.setState({specialCount: specialCount-1,})
       }
+      this.setState({content: e.target.value});
     }
   }
 
