@@ -10,14 +10,15 @@ class WisdomForm extends React.Component{
   handleKeyUp = (e) => {
     const char = e.charCode || e.keyCode;
     const {content,specialCount}= this.state;
+
     if(char >= 32 && char < 127 ){
       const key = e.key;
       this.setState({content: e.target.value, specialCount: key === "*" ? specialCount+1 : specialCount});
     }
     if(char === 8){
       const selectionStart = this.input.selectionStart
-      const currentDeleted = content[selectionStart-1];
-      if(currentDeleted === "*"){
+      const currentSlct = content[selectionStart];
+      if(currentSlct === "*"){
         this.setState({specialCount: specialCount-1,})
       }
       this.setState({content: e.target.value});
